@@ -5,16 +5,15 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .content {
-
   gap: 0.5vh;
   display: grid;
   grid-template-areas:
     "a1 a1"
     "container container";
-  background-color: aqua; 
 
+  overflow: hidden;
 }
-.area-1 { 
+.area-1 {
   border-radius: 1vh;
   grid-template-areas: a1;
   background-color: #d0d0d0;
@@ -32,6 +31,7 @@
   font-size: 2em;
   height: 100%;
   grid-area: a2;
+  width: 100vw;
   background-color: #d0d0d0;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
 }
 .area-3 {
   border-radius: 1vh;
-
+  width: 100vw;
   font-size: 2em;
   color: white;
   height: 100%;
@@ -52,22 +52,40 @@
 .container {
   grid-area: container;
   display: grid;
-  grid-template-areas: "a2 a3"; 
+  grid-template-areas:
+    "a2 a2"
+    "a3 a3";
+  width: 100vw;
   height: 90vh;
+  gap: 1vh;
 }
 @media (min-width: 1000px) {
-  .content {
-    height: 100vh;
+  .container {
+    display: grid;
     gap: 1vh;
+    grid-template-areas: "a2 a3";
+  }
+  .content {
+    gap: 0.5vh;
     display: grid;
     grid-template-areas:
       "a1 a1"
-      "a1 a3"
-      "a2 a3";
+      "container container";
+
+    overflow: hidden;
+  }
+  .area-1 {
+    width: 100vw;
+  }
+  .area-2 {
+    width: 60vw;
+  }
+  .area-3 {
+    border-radius: 1vh;
+    width: 40vw;
   }
   .container {
-    background-color: red;
-    display: grid;
     grid-template-areas: "a2 a3";
+    height: 90vh;
   }
 }
