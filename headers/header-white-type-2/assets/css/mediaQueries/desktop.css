@@ -1,0 +1,30 @@
+@media (min-width: 1000px) {
+  .menu-button {
+    width: 10%;
+    position: relative;
+    right: 19%;
+  }
+  .nav-links {
+    width: 12vw;
+  }
+  .links {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .links li {
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .links li:hover {
+    border-bottom: 2px solid black;
+  }
+  .more-button {
+    width: 10%;
+    font-size: 1em;
+    position: relative;
+    left: 15%;
+  }
+}

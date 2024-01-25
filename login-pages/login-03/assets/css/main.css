@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home {
+  display: grid;
+  grid-template-areas:
+    "s1 s1"
+    "s2 s2";
+}
+.section01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: s1;
+  height: 100vh;
+  gap: 10vh;
+}
+.text-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.text-form h1 {
+  font-size: 3em;
+}
+.form-area {
+  width: 100%;
+}
+.border {
+  background-color: black;
+  height: 1vh;
+  width: 40%;
+}
+.form-area form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+}
+.form-area form input {
+  width: 90%;
+  padding: 3vh;
+  font-size: 1.1em;
+  background-color: #e8ebf2;
+  border: none;
+  border-radius: 5vh;
+}
+.form-area form textarea {
+  width: 90%;
+  background-color: #e8ebf2;
+  padding: 4vh;
+  font-size: 1.1em;
+  border-radius: 4vh;
+  border: none;
+}
+.form-area form button {
+  background-color: #b493fe;
+  width: 90%;
+  padding: 3vh;
+  border: none;
+  border-radius: 5vh;
+  font-size: 1.1em;
+  color: white;
+}
+
+.section02 {
+  grid-area: s2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image img {
+  height: 53vh;
+}
+/* desktop */
+@media (min-width: 1200px) {
+  .border {
+    width: 30%;
+  }
+  .home {
+    display: grid;
+    grid-template-areas:
+      "s1 s2"
+      "s1 s2";
+    overflow: hidden;
+  }
+  .section01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: s1;
+    height: 100vh;
+    gap: 10vh;
+    width: 40vw;
+  }
+  .form-area form input,
+  .form-area form textarea {
+    width: 55%;
+    color: #bbbfc2;
+    padding: 2.2vh;
+  }
+  .form-area form button {
+    width: 55%;
+    padding: 2.2vh;
+    border-radius: 50px;
+    background: #b596fe;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  .section02 {
+    width: 60vw;
+  }
+  .image {
+    overflow: hidden;
+    height: 110vh;
+    position: relative;
+    right: 10vw;
+    bottom: 5vh;
+  }
+  .image img {
+    height: 100%;
+  }
+}

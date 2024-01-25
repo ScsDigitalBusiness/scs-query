@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-home {
+  background-color: red;
+  height: 100vh;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  background-color: #F2F5F5;
+}
+.logo-and-buttons {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.menu-button {
+  padding: 2vh;
+  height: 9vh;
+  width: 30%;
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-button img {
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 40%;
+  grid-area: logo;
+  background-color: #F2F5F5;
+  height: 100%;
+}
+.s {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 4vh;
+
+  clip-path: circle();
+}
+.more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 70%; 
+  padding: 1vh;
+  border-radius: 6vh;
+  border: 0;
+  background-color: black;
+  color: white;
+}
+.nav-links {
+  width: 50vw;  
+  position: fixed; 
+  top: 12%; 
+  left: 0;
+  height: 90vh;
+  background-color: #F2F5F5;
+}
+.links  li { 
+  
+  list-style: none;
+  padding: 2vh;
+} 
+.links  li:hover {
+  background-color: #dbdddd;
+}

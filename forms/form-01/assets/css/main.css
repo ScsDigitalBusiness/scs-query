@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home {
+  background-color: red;
+  height: 100vh;
+}
+.form-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: green;
+}
+.text {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.form {
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2vh;
+  height: 50vh;
+  width: 30vw; 
+}
+.remenber__and__forgot {
+  background-color: blue;
+}
+.remenber__and__forgot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1vh;
+}
+.form-button {
+  background-color: green;
+}

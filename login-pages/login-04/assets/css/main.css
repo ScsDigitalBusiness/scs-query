@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+.area-01{
+    background-color: yellow;
+    grid-area: a1;
+
+} 
+.area-02 {
+    grid-area: a2;
+    background-color: pink;
+}
+.content { 
+    display: grid;
+    background-color: RED; 
+    height: 100vh; 
+     grid-template-areas: 
+     "a1 a2";
+
+}

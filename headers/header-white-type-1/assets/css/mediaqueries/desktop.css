@@ -1,0 +1,38 @@
+@media(min-width: 1200px) { 
+    .nav-bar {
+        flex-direction: row;
+    }
+   .menu {
+    display: none;
+   }   
+   .logo {
+    height: 8vh;
+   } 
+   .nav-links {
+    display: flex;  
+    justify-content: center;
+    
+
+   } 
+   .links{ 
+    display: flex;
+    align-items: center; 
+    justify-content: end;
+    font-size: 0.6em;   
+      flex-direction: row; 
+      font-weight: bold; 
+    
+   }  
+   .links li {
+    transition: 1s;  
+    cursor: pointer;
+   } 
+   .links li:hover{ 
+    border-bottom: 2px solid black;
+   } 
+   .contat { 
+    cursor: pointer;
+    width: 10vw; 
+    padding: 0.5vh;
+   }
+}

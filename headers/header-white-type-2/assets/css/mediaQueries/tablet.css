@@ -1,0 +1,12 @@
+@media(min-width: 768px ) {
+    .nav-links { 
+        top: 11%; 
+        width: 30vw;
+    } 
+    .links li {
+        font-size: 1.3em;
+    }
+    .more-button {
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,70 @@
+.card-03 {
+  background-color: #d7d6dc;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+
+  padding-bottom: 5vh;
+  width: 20%;
+  height: 50vh;
+  gap: 5vh;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.icons img {
+  position: relative;
+  right: 2vh;
+  bottom: 1vh;
+  height: 5vh;
+}
+.card-text p {
+  font-size: 1.1em;
+  padding-bottom: 1vh;
+}
+.card-03-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.card-text .border {
+  background-color: #3f5de5;
+  height: 3%;
+  padding: 0.1vh;
+}
+.card-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.card-price p {
+  font-size: 2em;
+  font-weight: bold;
+}
+.month {
+  color: #7c7d82;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.card-button-element-2 {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  padding: 2vh;
+}
+.card-button-element-2 button {
+  background-color: #3d5cef;
+  padding: 2vh;
+  width: 80%;
+  border-radius: 5vh;
+  border: none;
+  color: white;
+}
