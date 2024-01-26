@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "a1 a1"
+    "a2 a2";
+}
+.a1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: a1;
+  background-color: #ffffff;
+  height: 100vh;
+}
+.a2 {
+  grid-area: a2;
+  height: 100vh;
+  background: url(../utilites/Captura\ de\ tela\ 2024-01-25\ 130631.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-area {
+  width: 100%;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: vh;
+  gap: 5vh;
+}
+.forms .inputs {
+  width: 90%;
+  padding: 2vh;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.text {
+  padding: 3vh;
+}
+.text h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.alert {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding-left: 5vh;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.check {
+  display: flex;
+  gap: 2vh;
+}
+.button__form {
+  padding: 2vh 15vh;
+  background-color: #99ebdf;
+  color: white;
+  border: none;
+  border-radius: 5vh;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+@media (min-width: 1000px) {
+  .content {
+    display: grid;
+    grid-template-areas: "a2 a1";
+  }
+  .a1,
+  .a2 {
+    width: 50vw;
+  }
+  .form-area {
+    width: 30vw;
+  } 
+  .forms .inputs {
+    border-bottom: 1px solid black;
+  } 
+  .forms .inputs:focus{
+    outline: none;
+
+  }
+  .alert {
+    align-items: center;
+    width: 50vw;
+    padding-left: 24vh;
+  }
+}

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "a1"
+    "a2";
+}
+.a1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-area {
+  height: 100vh;
+  width: 95vw;
+  display: grid;
+  grid-template-areas:
+    " text  text"
+    "form form";
+}
+.text {
+  font-size: 1.7em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh;
+  height: 30vh;
+  grid-area: text;
+}
+.forms {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  grid-area: form;
+}
+.form-element {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+  gap: 4vh;
+  justify-content: start;
+  flex-direction: column;
+}
+.input-area {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-area p {
+  position: relative;
+  right: 13vh;
+
+  color: silver;
+}
+.form-element input {
+  background-color: transparent;
+  transition: 0.5s;
+  padding: 2vh;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.form-button {
+  background-color: #497deb;
+  color: white;
+  padding: 2vh;
+  border: none;
+  border-radius: 5vh;
+  font-size: 1.2em; 
+  transition: 1.2s; 
+  
+}
+.area-buttonns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+.area-buttonns p {
+  color: silver;
+}
+.a2 {
+  height: 100vh;
+  background: url(../utilites/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1000px) {
+  .content {
+    display: grid;
+    grid-template-areas: "a1 a2";
+  }
+  .a1 {
+    width: 35vw;
+  } 
+ 
+  .input-area {
+    width: 30vw; 
+
+  }  
+  .input-area input:focus {
+    outline: none; 
+    color:#497DEB ;  
+    font-weight: bold;
+    border-bottom: 2px solid #497DEB;
+
+  }
+  .input-area p  {
+   right: 20vh; 
+
+  }
+  .a2 { 
+ 
+    width: 59vw;
+  } 
+  .form-area button:hover { 
+    cursor: pointer;
+     background-color: black; 
+     color: white;
+  }
+}
