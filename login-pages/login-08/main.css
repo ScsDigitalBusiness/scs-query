@@ -36,24 +36,21 @@
 }
 .forms .input-area {
   width: 90vw;
-}  
-.input-area { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    
-
+}
+.input-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .input-area img {
-    position: absolute;
-    left: 10%; 
-    filter: opacity(0.5);
-    height: 4vh;
-} 
+  position: absolute;
+  left: 10%;
+  filter: opacity(0.5);
+  height: 4vh;
+}
 .input-area input {
-    padding-left: 9vb; 
-
+  padding-left: 9vb;
 }
 .forms textarea {
   width: 100%;
@@ -61,6 +58,7 @@
   border-radius: 3vh;
   border: none;
   padding: 2vh;
+  padding-left: 3vh;
 }
 .btn {
   width: 100%;
@@ -101,13 +99,13 @@
   .input-area input:focus,
   textarea:focus {
     outline: none;
-  } 
+  }
   .input-area img {
     position: absolute;
-    left: 61%; 
+    left: 61%;
     filter: opacity(0.5);
     height: 3.5vh;
-} 
+  }
   .a1 {
     width: 50vw;
     height: 100vh;
@@ -117,11 +115,11 @@
     height: 100vh;
   }
   .btn {
-    margin-top: 5vh; 
-    cursor: pointer; 
+    margin-top: 5vh;
+    cursor: pointer;
     transition: 1.2s;
-  } 
-  .btn:hover { 
+  }
+  .btn:hover {
     background-color: silver;
     margin-top: 5vh;
   }
