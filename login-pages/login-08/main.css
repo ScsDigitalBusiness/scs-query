@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+.a1 {
+  grid-area: a1;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.forms {
+  gap: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text {
+  width: 90%;
+  font-size: 1.2em;
+  padding: 3vh;
+  color: #afafaf;
+}
+.forms input {
+  padding: 3vh;
+  border-radius: 5vh;
+  width: 100%;
+  border: none;
+  background-color: #ececec;
+  font-size: 1em;
+}
+.forms .input-area {
+  width: 90vw;
+}  
+.input-area { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+.input-area img {
+    position: absolute;
+    left: 10%; 
+    filter: opacity(0.5);
+    height: 4vh;
+} 
+.input-area input {
+    padding-left: 9vb; 
+
+}
+.forms textarea {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 3vh;
+  border: none;
+  padding: 2vh;
+}
+.btn {
+  width: 100%;
+  padding: 3vh;
+  border-radius: 5vh;
+  border: none;
+  background-color: #f58e6e;
+  font-size: 1.2em;
+  color: white;
+}
+.a2 {
+  grid-area: a2;
+  background: url(bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 50vh;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "a1 a1"
+    "a2 a2";
+}
+@media (min-width: 1000px) {
+  .text {
+    width: 65%;
+    padding-bottom: 5vh;
+    color: #7a7a7a;
+  }
+  .content {
+    grid-template-areas: "a2 a1";
+  }
+  .forms .input-area {
+    width: 30vw;
+  }
+  .input-area input:focus,
+  textarea:focus {
+    outline: none;
+  } 
+  .input-area img {
+    position: absolute;
+    left: 61%; 
+    filter: opacity(0.5);
+    height: 3.5vh;
+} 
+  .a1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .a2 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .btn {
+    margin-top: 5vh; 
+    cursor: pointer; 
+    transition: 1.2s;
+  } 
+  .btn:hover { 
+    background-color: silver;
+    margin-top: 5vh;
+  }
+}

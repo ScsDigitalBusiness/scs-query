@@ -13,7 +13,7 @@
 }
 .formt-text {
   padding: 2vh;
-  width: 32.5%; 
+  width: 90.5%; 
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
@@ -40,7 +40,8 @@
   justify-content: center;
 } 
 .alerts {
-    font-size: 0.8em;
+    font-size: 0.8em; 
+    width: 90%;
 }
 .check-area {
   display: flex;
@@ -54,14 +55,15 @@
     justify-content: center;
     flex-direction: column;
     color: #c1c1c3; 
-  gap: 2vh;
+  gap: 2vh; 
+  width: 80vw;
 } 
 .label {
      color: black;
 }
 .input__area input {
   padding: 2vh;
-  width: 30vw;
+  width: 100%;
 }
 .button-form {
   background-color: #7f57d4;
@@ -71,4 +73,10 @@
   color: white;
   border: none;
   border-radius: 1vh;
+}  
+@media(min-width : 1000px) {
+  .input__area input {
+    width: 100%;
+  }
 }
+
