@@ -11,5 +11,30 @@
      align-items: center;
      justify-content: center; 
      flex-direction: column;
-      
+    background-color: #F2F2F7;
 } 
+.card-body{
+    background: white; 
+   padding: 2vh; 
+   border-radius: 2vh;
+   height: 50vh;  
+   width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2vh; 
+  
+  flex-direction: column;
+}    
+
+.img {
+    background-color: red;
+    height: 20vh;
+    width: 95%;  
+    border-radius: 2vh; 
+
+
+} 
+
+ 
+
