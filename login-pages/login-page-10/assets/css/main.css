@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.a1 {
+  grid-area: a1;
+  height: 50vh;
+  background-color: red;
+}
+.a2 {
+  grid-area: a2;
+  height: 50vh;
+  background-color: yellow;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "a1 a1"
+    "a2 a2";
+}
