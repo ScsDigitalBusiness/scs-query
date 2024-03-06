@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.content {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body {
+  width: 20vw;
+ background-color: white;
+  padding-bottom: 7vh;  
+}
+.img {
+     background: url(zyro-image.png) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+    height: 25vh;
+} 
+
+.text {
+    padding: 3vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2vh; 
+    flex-direction: column;
+}    
+.text small {
+  color: gray; 
+  font-weight: 300;
+}
+.text h2 {
+    font-weight: bold ;
+}
+.text p {
+    font-weight: 500;
+}
+.buttons {
+    position: relative;
+    top: 6vh;
+}
+.more-btn {
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   gap: 1vh; 
+   color: #6C59B3;  
+   cursor: pointer;
+   
+}
+.more-btn img {
+    height: 7vh;
+
+}
